@@ -1,29 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Live from Drammen</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
-    h1 { font-size: 3rem; margin-bottom: 1rem; }
-    p { opacity: 0.7; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gygante Quantitative Systems</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #020617;
+  color: #e2e8f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #94a3b8;
+  max-width: 600px;
+  margin: auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.section {
+  border-top: 1px solid #1e293b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #38bdf8;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+.footer {
+  text-align: center;
+  padding: 60px 0;
+  color: #64748b;
+}
+</style>
 </head>
+
 <body>
-  <div>
-    <h1>This is Shakya, founder of Gygante Quantitative Systems 🌊</h1>
-    <p>Coming Soon!</p>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">Gygante Quantitative Systems</div>
+  <h1>NexusQ</h1>
+  <p>
+    Integrated Energy–Macro Intelligence Platform<br>
+    Turning proprietary energy data into predictive financial signals.
+  </p>
+</section>
+
+<!-- PROBLEM -->
+<section class="section">
+  <div class="container">
+    <h2>Market Inefficiency</h2>
+    <p>
+      Energy markets and macroeconomic systems are deeply interconnected — yet remain
+      fragmented across tools. Investors rely on shallow proxies (e.g. oil price)
+      instead of real causal drivers.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Data Silos</h3>
+        <p>Energy analytics and macro platforms operate independently.</p>
+      </div>
+      <div class="card">
+        <h3>Missed Alpha</h3>
+        <p>Second-order effects (inventory shifts, logistics signals) are overlooked.</p>
+      </div>
+      <div class="card">
+        <h3>Reactive Decisions</h3>
+        <p>Insights come too late — markets already priced them in.</p>
+      </div>
+    </div>
   </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section">
+  <div class="container">
+    <h2>NexusQ</h2>
+    <p>
+      A machine-learning driven platform that fuses <span class="highlight">granular energy data</span>
+      with <span class="highlight">macroeconomic signals</span> to generate real-time predictions.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Predictive Alpha</h3>
+        <p>Early signals from hidden energy–macro relationships.</p>
+      </div>
+      <div class="card">
+        <h3>Real-Time Alerts</h3>
+        <p>Continuous anomaly detection across global markets.</p>
+      </div>
+      <div class="card">
+        <h3>Scenario Engine</h3>
+        <p>Simulate macro impact of shocks instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section class="section">
+  <div class="container">
+    <h2>Core Engine</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Energy Beta</h3>
+        <p>Quantifies asset sensitivity to energy variables.</p>
+      </div>
+      <div class="card">
+        <h3>Arbitrage Signals</h3>
+        <p>Identifies mispricing between FX and energy fundamentals.</p>
+      </div>
+      <div class="card">
+        <h3>Shock Simulator</h3>
+        <p>Projects cross-market impacts of energy disruptions.</p>
+      </div>
+      <div class="card">
+        <h3>Sentiment Pulse</h3>
+        <p>NLP-driven macro-energy narrative tracking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="section">
+  <div class="container">
+    <h2>Proof of Value</h2>
+    <p>
+      NexusQ identified a strong relationship between European carbon prices and steel equities,
+      predicting double-digit upside in ArcelorMittal — validating real alpha generation.
+    </p>
+
+    <div class="card">
+      <p><strong>Result:</strong> ~4% alpha over sector benchmark</p>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS -->
+<section class="section">
+  <div class="container">
+    <h2>Business Model</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Enterprise SaaS</h3>
+        <p>Annual subscriptions for hedge funds and institutions.</p>
+      </div>
+      <div class="card">
+        <h3>Data APIs</h3>
+        <p>Direct integration into trading systems.</p>
+      </div>
+      <div class="card">
+        <h3>Premium Insights</h3>
+        <p>Advanced analytics and custom scenarios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDGE -->
+<section class="section">
+  <div class="container">
+    <h2>Competitive Edge</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Proprietary Data</h3>
+        <p>Exclusive granular datasets from Rystad Energy.</p>
+      </div>
+      <div class="card">
+        <h3>ML Engine</h3>
+        <p>Advanced models detecting hidden relationships.</p>
+      </div>
+      <div class="card">
+        <h3>First-Mover Advantage</h3>
+        <p>No direct competitor in energy–macro intelligence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <h2>Investor Opportunity</h2>
+    <p>
+      NexusQ is positioned to become the <span class="highlight">Bloomberg of energy–macro intelligence</span>.
+      We are currently engaging early partners and investors.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  © Gygante Quantitative Systems
+</div>
+
 </body>
 </html>
