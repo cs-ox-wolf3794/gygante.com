@@ -30,6 +30,26 @@ jobs:
         working-directory: investor-access-src
         run: npm ci
 
+      - name: Validate required secrets
+        env:
+          VITE_SITE_ACCESS_PASSWORD: ${{ secrets.VITE_SITE_ACCESS_PASSWORD }}
+          VITE_ALLOWED_USERS: ${{ secrets.VITE_ALLOWED_USERS }}
+          VITE_ACCESS_SESSION_HOURS: ${{ secrets.VITE_ACCESS_SESSION_HOURS }}
+        run: |
+          if [ -z "$VITE_SITE_ACCESS_PASSWORD" ]; then
+            echo "::error::Missing Actions secret VITE_SITE_ACCESS_PASSWORD. Add it at Settings > Secrets and variables > Actions."
+            echo "::error::If you created an Environment secret instead, set an environment on this job so the secret is exposed."
+            exit 1
+          fi
+
+          if [ -z "$VITE_ALLOWED_USERS" ]; then
+            echo "::warning::VITE_ALLOWED_USERS is empty. Login will accept any username with the correct password."
+          fi
+
+          if [ -z "$VITE_ACCESS_SESSION_HOURS" ]; then
+            echo "::notice::VITE_ACCESS_SESSION_HOURS is empty. App default of 12 hours will be used."
+          fi
+
       - name: Build investor-access with secrets
         working-directory: investor-access-src
         env:
