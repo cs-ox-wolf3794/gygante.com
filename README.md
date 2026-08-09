@@ -40,4 +40,12 @@ Set these in deployment environment variables:
 - `VITE_ALLOWED_USERS=<comma,separated,usernames>`
 - `VITE_ACCESS_SESSION_HOURS=12`
 
+For GitHub-hosted builds, create repository secrets with these exact names:
+
+- `VITE_SITE_ACCESS_PASSWORD`
+- `VITE_ALLOWED_USERS`
+- `VITE_ACCESS_SESSION_HOURS`
+
+Then run the workflow in `.github/workflows/build-investor-access.yml` from the Actions tab.
+
 See `investor-access-src/ACCESS_CONTROL.md` for full details.

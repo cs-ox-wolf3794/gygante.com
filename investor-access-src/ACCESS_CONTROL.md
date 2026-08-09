@@ -17,6 +17,16 @@ This is useful as a first barrier, but by itself it is not strong security becau
 3. Set `VITE_ALLOWED_USERS` to approved usernames.
 4. Keep `VITE_ENFORCE_ACCESS=true`.
 
+## GitHub Secrets And Deployment
+
+If you deploy from GitHub, repository secrets are only used when a workflow reads them at build time.
+
+1. Add repository secrets named `VITE_SITE_ACCESS_PASSWORD`, `VITE_ALLOWED_USERS`, and `VITE_ACCESS_SESSION_HOURS`.
+2. Run the workflow in `.github/workflows/build-investor-access.yml`.
+3. Confirm the workflow succeeds and commits updated files in `investor-access/`.
+
+The build now fails automatically if `VITE_SITE_ACCESS_PASSWORD` is empty or set to a known placeholder.
+
 ## Recommended Real Protection In Production
 
 Use platform-level access control in front of the app:
